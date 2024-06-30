@@ -63,23 +63,26 @@ int main()
     // for(auto i:b)
     // cout<<i<<" ";
     array<int,6>a = {10,20,30,40,50,60};
-    array<int , 6>::iterator it;
-    it = a.begin();
-    cout<<*it;
-    cout<<endl;
-    for(;it != a.end() ;it++)
+    // array<int , 6>::iterator it;
+    // it = a.begin();
+    // cout<<*it;
+    // cout<<endl;
+    // for(;it != a.end() ;it++)
+    // cout<<*it<<" ";
+
+    // cout<<endl;
+    // for(;it != a.end() ;it++)
+    // {
+    //     *it = *it+1;
+    // }
+
+    // cout<<endl;
+
+    // for(int x : a)
+    // cout<<x<<" ";
+    array<int , 6>::reverse_iterator it;
+    for(it = a.rbegin() ; it != a.rend() ;it++)
     cout<<*it<<" ";
-
-    cout<<endl;
-    for(;it != a.end() ;it++)
-    {
-        *it = *it+1;
-    }
-
-    cout<<endl;
-
-    for(int x : a)
-    cout<<x<<" ";
 
 
 
